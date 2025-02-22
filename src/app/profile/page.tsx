@@ -64,13 +64,15 @@ export default function Home() {
                 alt="profile"
                 className="rounded-full w-40 mx-auto md:mx-0"
               />
-              <div className="flex flex-col gap-2 justify-start font-medium">
-                <p>Lnwza Eiei</p>
-                <p className="flex items-center gap-2">
+              <div className="flex flex-col gap-2 justify-start">
+                <p className="text-xl font-medium">Lnwza Eiei</p>
+                <p className="flex items-center gap-2 font-normal">
                   <MapPin className="text-gray-500" size={18}></MapPin> Location
                 </p>
                 <p>Bio</p>
-                <p>Social media</p>
+                <div className="flex">
+                  <p>Social media</p>
+                </div>
               </div>
             </div>
           </div>
@@ -94,13 +96,13 @@ export default function Home() {
                   <div className="flex gap-1">
                     <p>{project.information}</p>
                   </div>
-                  <div className="flex flex-col gap-1 h-full">
+                  <div className="flex gap-1 h-full">
                     {project.images.map((image, imgIndex) => (
                       <img
                         key={imgIndex}
                         src={image}
                         alt="project"
-                        className="rounded-md w-full"
+                        className="rounded-md w-2/4"
                       />
                     ))}
                   </div>
