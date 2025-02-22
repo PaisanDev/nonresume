@@ -56,7 +56,7 @@ export default function Home() {
             </Button>
           </div>
         </nav>
-        <main className="flex flex-col justify-between md:grid md:grid-cols-12 sm:px-40 py-6 transition-all">
+        <main className="flex flex-col justify-between md:grid md:grid-cols-12 md:px-20 lg:px-40 py-6 transition-all">
           <div className="flex col-span-4 justify-center border-b-[1px] md:border-b-0 pb-8">
             <div className="flex flex-col w-full justify-center md:justify-start gap-4 px-6">
               <img
@@ -96,13 +96,13 @@ export default function Home() {
                   <div className="flex gap-1">
                     <p>{project.information}</p>
                   </div>
-                  <div className="flex gap-1 h-full">
+                  <div className="grid grid-cols-12 gap-1 h-full">
                     {project.images.map((image, imgIndex) => (
                       <img
                         key={imgIndex}
                         src={image}
                         alt="project"
-                        className="rounded-md w-2/4"
+                        className="rounded-md col-span-full md:col-span-6 w-full"
                       />
                     ))}
                   </div>
